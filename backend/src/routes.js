@@ -15,7 +15,7 @@ routes.get('/profile', ProfileController.index);
 
 routes.get('/incidents', IncidentController.index);
 routes.post('/incidents', IncidentController.create);
-routes.post('/incidents/:id', IncidentController.delete);
+routes.delete('/incidents/:id', IncidentController.delete);
 
 routes.post('/session', SessionController.create);
 
